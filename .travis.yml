@@ -1,0 +1,8 @@
+host: 0.0.0.0
+port: 3000
+language: node_js
+node_js:
+- '13'
+install: npm install
+script:
+- npm run test
