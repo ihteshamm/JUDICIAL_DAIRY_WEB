@@ -8,12 +8,15 @@
     5. view all cases, all lawyer in the system etc
     6. view lawyers rattings
     7. view Law Dictionary
+    etc
+    
 # Lawyers
     1. Accept/Reject case request
     2. View Cases
     4. View his profile
     5. view all cases, all lawyer in the system etc
     6. view Law Dictionary
+    etc
 
 # We uses!
 - MongoDB
