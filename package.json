@@ -11,16 +11,20 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@heroku/buildpack-registry": "^1.0.1",
+    "async-file": "^2.0.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "cli-ux": "^6.0.9",
     "concurrently": "^5.3.0",
     "dotenv": "^10.0.0",
     "express": "^4.16.4",
     "express-fileupload": "^1.2.1",
     "firebase": "^8.3.1",
+    "got": "^12.1.0",
     "gravatar": "^1.8.1",
     "heroku": "^7.60.2",
     "http": "^0.0.1-security",
@@ -33,6 +37,7 @@
     "node.js": "^0.0.1-security",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "phoenix": "^1.6.11",
     "razorpay": "^2.8.0",
     "react-modal-login": "^1.4.5",
     "react-payment-inputs": "^1.1.8",
@@ -51,6 +56,5 @@
   "engines": {
     "node": "16.16.0",
     "npm": "6.14.17"
-
   }
 }
